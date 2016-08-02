@@ -2,27 +2,27 @@ var express = require('express');
 var router = express.Router();
 
 var rawPolicy = {
-    policy_id                   :   'String',
-    insured                     :   'String',       //URL to user resource
-    vehicle                     :   'String',       //URL to vehicle resource
-    claims                      :   ['String'],     //URLs to claims resources
-    policy_143567               :   'String',
-    insurer                     :   'String',
+    policy_id                   :   'policy_id: 12345798',
+    insured                     :   'Someone',       //URL to user resource
+    vehicle                     :   'vehicle_url',       //URL to vehicle resource
+    claims                      :   ['claim_url_1','claim_url_2'],     //URLs to claims resources
+    policy_number               :   '14175257373',
+    insurer                     :   'Journey',
     gross_premium_amount        :   143567,
-    bi_limit_per_person         :   143567,
-    bi_limit_per_accident       :   143567,
-    pd_limit                    :   143567,
-    coll_deductible             :   143567,
-    comp_deductible             :   143567,
+    bi_limit_per_person         :   23120,
+    bi_limit_per_accident       :   7465,
+    pd_limit                    :   146,
+    coll_deductible             :   78,
+    comp_deductible             :   9456,
     umbi_limit_per_person       :   143567,
     umbi_limit_per_accident     :   143567,
-    umpd                        :   143567,
+    umpd                        :   75,
     cdw_waiver                  :   true,
     rental_car                  :   true,
     roadside_assistance         :   true,
     lease_gap_coverage          :   true,
-    inception_unix_secs         :   143567,
-    expiry_unix_secs            :   143567
+    inception_unix_secs         :   145465121,
+    expiry_unix_secs            :   163546517
 };
 
 var policy = {

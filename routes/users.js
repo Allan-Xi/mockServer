@@ -34,6 +34,7 @@ var rawUser = {
   state               : 'valid',
   phone               : '15600560999',
   email               : '34513141641@gmail.com',
+  reg_unix_secs       : 12362576,
   language            : 'English'
 };
 

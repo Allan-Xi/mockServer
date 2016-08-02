@@ -2,48 +2,48 @@ var express = require('express');
 var router = express.Router();
 
 var rawClaim = {
-    claim_id                    : 'String',
-    trip                        : 'String',       //URL to trip resource
-    policy                      : 'String',       //URL to policy resource
-    driver                      : 'String',       //URL to user resource
-    vehicle                     : 'String',       //URL to vehicle resource
-    accident_time_unix_secs     : 1231,
-    accident_location_lat       : 1231,
-    accident_location_long      : 1231,
+    claim_id                    : 'claim_id: 12357287',
+    trip                        : 'trip_url',       //URL to trip resource
+    policy                      : 'policy_url',       //URL to policy resource
+    driver                      : 'driver_url',       //URL to user resource
+    vehicle                     : 'vehicle_url',       //URL to vehicle resource
+    accident_time_unix_secs     : 151715157,
+    accident_location_lat       : 90,
+    accident_location_long      : 40,
     own_vehicle_photo_urls      : [],       //upload to S3 and include urls here
     damage_description_mp3_urls : [],       //upload to S3 and include urls here
     passengers                  : [
         {
-            first_name          : 'String',
-            last_name           : 'String',
-            dob                 : 'String',   //MM/DD/YYYY
-            address             : 'String',
-            city                : 'String',
-            state               : 'String',
-            zip                 : 'String'
+            first_name          : 'passenger',
+            last_name           : '1',
+            dob                 : '01/12/2015',   //MM/DD/YYYY
+            address             : 'Haidian, Beijing',
+            city                : 'Beijing',
+            state               : 'valid',
+            zip                 : '123456'
         },//...
     ],
     third_parties               : [
         {
             person              : {
-                first_name          : 'String',
-                last_name           : 'String',
-                dob                 : 'String',   //MM/DD/YYYY
-                address             : 'String',
-                city                : 'String',
-                state               : 'String',
-                zip                 : 'String',
-                license_1231      : 'String'
+                first_name          : 'Hail',
+                last_name           : 'Hydra',
+                dob                 : '02/20/2015',   //MM/DD/YYYY
+                address             : 'Haidian District',
+                city                : 'Beijing',
+                state               : 'val',
+                zip                 : 'zip Number',
+                license_number      : '123456789'
             },
             vehicle             : {             //Optional if pedestrian
-                year                : 'String',
-                make                : 'String',
-                model               : 'String',
+                year                : '2015',
+                make                : 'Toyata',
+                model               : 'S1',
                 photo_urls          : []        //upload to S3 and include urls here
             },
             policy              : {             //Optional if pedestrian
-                policy_num          : 'String',
-                insurer             : 'String'
+                policy_num          : 'policy_num: 12416127',
+                insurer             : 'Journey'
             }
         }]
 };
