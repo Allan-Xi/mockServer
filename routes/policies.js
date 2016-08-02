@@ -2,10 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 var rawPolicy = {
-    policy_id                   :   'policy_id: 12345798',
-    insured                     :   'Someone',       //URL to user resource
-    vehicle                     :   'vehicle_url',       //URL to vehicle resource
-    claims                      :   ['claim_url_1','claim_url_2'],     //URLs to claims resources
+    policy_id                   :   '12345798',
+    insured                     :   '/users/4764564',       //URL to user resource
+    vehicle                     :   '/vehicles/654765',       //URL to vehicle resource
+    claims                      :   ['/claims/56465321','/claims/654351'],     //URLs to claims resources
     policy_number               :   '14175257373',
     insurer                     :   'Journey',
     gross_premium_amount        :   143567,

@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 var rawQuote = {
-    quote_id                    :   'quote_id:123567',
-    driver                      :   'driver_url',         // url to user resoure
-    vehicle                     :   'vehicle_url',         // url to vehicle resoure
+    quote_id                    :   '123567',
+    driver                      :   '/drivers/12654321365',         // url to user resoure
+    vehicle                     :   '/vehicles/5651231',         // url to vehicle resoure
     gross_premium_amount        :   456456,
     bi_limit_per_person         :   576,
     bi_limit_per_accident       :   7869,

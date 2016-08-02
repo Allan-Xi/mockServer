@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 
 var rawClaim = {
-    claim_id                    : 'claim_id: 12357287',
-    trip                        : 'trip_url',       //URL to trip resource
-    policy                      : 'policy_url',       //URL to policy resource
-    driver                      : 'driver_url',       //URL to user resource
-    vehicle                     : 'vehicle_url',       //URL to vehicle resource
+    claim_id                    : '12357287',
+    trip                        : '/trips/46514651',       //URL to trip resource
+    policy                      : '/policies/46514651',       //URL to policy resource
+    driver                      : '/users/46514651',       //URL to user resource
+    vehicle                     : '/vehicles/46514651',       //URL to vehicle resource
     accident_time_unix_secs     : 151715157,
     accident_location_lat       : 90,
     accident_location_long      : 40,
@@ -42,7 +42,7 @@ var rawClaim = {
                 photo_urls          : []        //upload to S3 and include urls here
             },
             policy              : {             //Optional if pedestrian
-                policy_num          : 'policy_num: 12416127',
+                policy_num          : '1241662127',
                 insurer             : 'Journey'
             }
         }]
