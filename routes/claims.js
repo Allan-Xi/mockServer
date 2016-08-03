@@ -10,7 +10,13 @@ var rawClaim = {
     accident_time_unix_secs     : 151715157,
     accident_location_lat       : 90,
     accident_location_long      : 40,
-    own_vehicle_photo_urls      : [],       //upload to S3 and include urls here
+    own_vehicle_photo_urls      : [
+        '/images/damaged_car.jpg',
+        '/images/damaged_car.jpg',
+        '/images/damaged_car.jpg',
+        '/images/damaged_car.jpg',
+        '/images/damaged_car.jpg',
+        '/images/damaged_car.jpg'],       //upload to S3 and include urls here
     damage_description_mp3_urls : [],       //upload to S3 and include urls here
     passengers                  : [
         {
