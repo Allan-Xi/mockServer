@@ -55,7 +55,7 @@ var rawClaim = {
   claim_id                    : '12357287',
   trip                        : '/trips/46514651',       //URL to trip resource
   policy                      : '/policies/46514651',       //URL to policy resource
-  driver                      : '/users/46514651',       //URL to user resource
+  driver                      : 'Hail . Hydra',       //URL to user resource
   vehicle                     : '/vehicles/46514651',       //URL to vehicle resource
   accident_time_unix_secs     : 151715157,
   accident_location_lat       : 90,
@@ -148,7 +148,7 @@ var rawQuote = {
 }
 var user = {
   status: 200,
-  users: rawUser
+  user: rawUser
 }
 var users =  {
   status              : 200,
@@ -164,12 +164,12 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:user_id', function(req,res,next){
-  if(req.query.expand == 'true'){
+  if(req.query.expand){
 
 
     res.send({
       status:200,
-      users:{
+      user:{
         policies:[rawPolicy],
         claims: [rawClaim],
         quotes: [rawQuote]

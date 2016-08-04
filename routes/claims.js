@@ -16,6 +16,8 @@ var rawClaim = {
         '/images/damaged_car.jpg',
         '/images/damaged_car.jpg',
         '/images/damaged_car.jpg',
+        '/images/damaged_car.jpg',
+        '/images/damaged_car.jpg',
         '/images/damaged_car.jpg'],       //upload to S3 and include urls here
     damage_description_mp3_urls : [],       //upload to S3 and include urls here
     passengers                  : [
